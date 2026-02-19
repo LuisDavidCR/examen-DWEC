@@ -1,1 +1,22 @@
-<p>new.component works!</p>
+<a routerLink="/home">← Volver</a>
+
+<h2>Nueva Serie</h2>
+
+<form [formGroup]="form" (ngSubmit)="save()">
+  <div>
+    <label>Título:</label>
+    <input type="text" formControlName="title" />
+  </div>
+
+  <div>
+    <label>Plataforma:</label>
+    <input type="text" formControlName="channel" />
+  </div>
+
+  <div>
+    <label>Valoración (0-10):</label>
+    <input type="number" formControlName="rating" />
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Enviar Serie</button>
+</form>

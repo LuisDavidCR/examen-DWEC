@@ -1,1 +1,11 @@
-<p>home.component works!</p>
+<section>
+  @for (serie of series; track serie.id) {
+    <article>
+      <h3>Titulo: {{ serie.title }}</h3>
+      <p>Plataforma: {{ serie.channel }}</p>
+      <span>Valoración: {{ serie.rating }}</span>
+    </article>
+  } @empty {
+    <p>No hay Series</p>
+  }
+</section>

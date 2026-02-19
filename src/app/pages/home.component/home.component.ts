@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { SeriesService } from '../../services/series.service';
+import { SerieDto } from '../../interfaces/serie.interface';
 
 @Component({
   selector: 'app-home.component',
@@ -7,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  private serieService = inject(SeriesService);
+  series: SerieDto[] = [];
 
+  ngOnInit() {
+    this.serieService.getAll().subscribe((data: SerieDto[]) => {
+      this.series = data;
+    });
+  }
 }

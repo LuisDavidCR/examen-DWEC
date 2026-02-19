@@ -1,0 +1,8 @@
+RewriteEngine On
+# Si el archivo existe (imagenes, estilos), sírvelo
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+
+# Si no existe, redirige todo a index.html dentro de /examen/
+RewriteRule ^ /index.html [L]

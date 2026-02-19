@@ -4,7 +4,7 @@ import { SeriesService } from '../../services/series.service';
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-new',
+  selector: 'app-new.component',
   imports: [RouterLink, ReactiveFormsModule],
   templateUrl: './new.component.html',
   styleUrl: './new.component.css',

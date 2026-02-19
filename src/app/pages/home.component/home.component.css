@@ -1,0 +1,15 @@
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+article{
+    width: 100%;
+    max-width: 400px; 
+    padding: 20px;
+    background-color: rgb(129, 234, 250);
+    border-style: solid;
+    text-align: left;
+}

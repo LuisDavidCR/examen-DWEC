@@ -1,0 +1,13 @@
+section {
+  display: flex;         
+  gap: 12px;             
+  padding: 12px;
+}
+
+article {
+  background: #19e0e0;   
+  padding: 12px;
+  text-align: center;
+  border-style: solid;
+  flex: 1;               
+}

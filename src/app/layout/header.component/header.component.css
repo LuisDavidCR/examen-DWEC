@@ -1,0 +1,18 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+h2 {
+    color: rgb(79, 79, 193);
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+}
